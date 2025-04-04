@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app {
+  text-align: center;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Buscador */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #e6b800;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Tabla */
+.content {
+  margin: 20px auto;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-x: auto; /* Soporte para pantallas pequeñas */
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.content th, .content td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.content th {
+  background-color: #ffcc00;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.content td img {
+  max-width: 80px;
+  border-radius: 5px;
+}
+
+.no-results {
+  color: #555;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: fixed; /* Hace que la paginación esté fija */
+  bottom: 0; /* Posiciona la paginación al fondo de la pantalla */
+  left: 0;
+  width: 100%; /* La barra ocupa el ancho completo */
+  background-color: #ffffff; /* Fondo para que destaque sobre el contenido */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para separarla del contenido */
+  padding: 10px 0; /* Espaciado interno para que sea más cómodo */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 18px;
+  }
+
+  .search-bar {
+    max-width: 90%;
+  }
+
+  .content th, .content td {
+    padding: 8px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}

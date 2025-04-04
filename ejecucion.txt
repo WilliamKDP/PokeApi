@@ -1,0 +1,3 @@
+- Usar o tener npm y node.js
+- Usar el comando en la consola estando dentro de la carpeta del protecto "npm install"
+- Una vez terminado la instalación de las dependencias, usar "npm start"
